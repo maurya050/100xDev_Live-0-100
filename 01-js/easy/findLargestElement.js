@@ -6,6 +6,10 @@
 */
 
 function findLargestElement(numbers) {
+    if(numbers.length === 0) return undefined;
+
+    numbers.sort((a, b) => b - a);
+    return numbers[0];
     
 }
 
